@@ -1,0 +1,347 @@
+/* GLODBAL STYLE BEGIN */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  --header1: calc(2rem + 1vw);
+  --header2: calc(3.5rem + 1vw);
+  --header3: calc(3rem + 1vw);
+  --header4: calc(2.4rem + 1vw);
+  --text: calc(1rem + 1vw);
+  --big: calc(2.4rem + 1vw);
+  --special-color: #414141;
+  --background-color: white;
+  --gray-text: #525252;
+}
+
+h1 {
+  font-size: var(--header1);
+}
+
+a {
+  font-size: 1.8rem;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+button,
+label,
+input,
+p {
+  font-size: var(--text);
+}
+
+h2 {
+  font-size: var(--header2);
+}
+
+h3 {
+  font-size: var(--header3);
+}
+
+h4,
+h5 {
+  font-size: var(--header4);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* GLOBAL STYLE END */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+li,
+p,
+a {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Nav Section */
+.main-head {
+  background: white;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  position: relative;
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+  padding: 2rem 0rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  flex: 1 1 20rem;
+}
+
+#logo {
+  letter-spacing: 1rem;
+  font-family: "Amatic SC", cursive;
+  flex: 1 1 20rem;
+}
+
+.hero {
+  min-height: 90vh;
+  width: 95%;
+  margin: 0 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-introduction {
+  flex: 2 1 40rem;
+  text-align: center;
+}
+
+.hero-introduction p {
+  padding: 5rem 10rem;
+  color: var(--gray-text);
+}
+
+.hero-introduction h2 {
+  padding-top: 3rem;
+}
+
+.hero-introduction a {
+  padding: 2rem 6rem;
+  margin-bottom: 2rem;
+}
+
+.booklesson {
+  border: 2px solid black;
+}
+
+.hero-images {
+  flex: 1 1 40rem;
+}
+
+.surfer-girl {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ABOUT SECTION */
+
+.rentals {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rentals-text {
+  flex: 2 1 40rem;
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 0rem 5rem;
+}
+
+.board-rental {
+  padding: 3rem 0rem;
+}
+
+.rental-rates {
+  font-size: 1.7rem;
+}
+
+.rentals-image {
+  flex: 2 2 40rem;
+  position: relative;
+}
+
+.rentals-image h5 {
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  text-align: center;
+  height: 35rem;
+  width: 40rem;
+  font-family: "Amatic SC", cursive;
+  letter-spacing: 1rem;
+}
+
+.rentnow {
+  border: 2px solid black;
+  padding: 2rem 6rem;
+}
+
+.surfboards {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* SHOP */
+
+.shop {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.shop img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shop1 {
+  grid-column: 1/3;
+  grid-row: 3/4;
+}
+
+.shop2 {
+  grid-column: 4/5;
+  grid-row: 1/4;
+}
+
+.shop3 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.shop4 {
+  grid-column: 2/4;
+  grid-row: 1/2;
+}
+
+.shop5 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  text-align: center;
+}
+
+.shop5 h1 {
+  font-size: 3rem;
+}
+
+.shop5 p {
+  font-size: 2rem;
+}
+
+.shop5 div {
+  padding: 2rem 0rem;
+}
+
+.shop5 div h2 {
+  font-family: "Amatic SC", cursive;
+  letter-spacing: 0.8rem;
+}
+
+.shop5 div p {
+  font-size: 1.7rem;
+  padding: 0.7rem 0rem;
+}
+
+.sale {
+  letter-spacing: 0.5rem;
+}
+
+.shopnow {
+  padding: 2rem 6rem;
+  border: 2px solid black;
+}
+
+span {
+  text-decoration: line-through;
+  color: red;
+}
+
+/* LESSONS  */
+
+.lessons {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lessons-text {
+  flex: 1 1 40rem;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.lessons-image {
+  flex: 2 1 40rem;
+  position: relative;
+}
+
+.lessons-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.learntosurf {
+  font-family: "Amatic SC", cursive;
+  letter-spacing: 1rem;
+}
+
+.booklesson {
+  padding: 2rem 6rem;
+}
+
+.lesson-rates {
+  font-size: 1.7rem;
+}
+
+.lesson-description {
+  padding: 2rem 9rem;
+}
+
+/* FOOTER */
+.footer {
+  min-height: 40vh;
+  background-color: #cadee6;
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-kelly {
+  flex: 1 1 20rem;
+}
+
+.contact-rick {
+  flex: 1 1 20rem;
+}
+
+.contact-mackenzie {
+  flex: 1 1 20rem;
+}
+
+.contact p {
+  font-size: 2rem;
+}
